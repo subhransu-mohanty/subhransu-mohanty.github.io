@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhransu | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="logo">S<span>.</span></div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+        Let’s Talk
+      </button>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker">Hello, I’m</p>
+          <h1 class="hero-title">Subhransu <span>Mohanty</span></h1>
+          <p class="hero-subtitle">
+            Full‑stack & AI developer building clean, intelligent, and scalable digital experiences.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">
+              View Projects
+            </button>
+            <button class="btn ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+              Contact Me
+            </button>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Role</span>
+              <span class="meta-value">Full‑Stack Developer</span>
+            </div>
+            <div>
+              <span class="meta-label">Location</span>
+              <span class="meta-value">India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D card -->
+        <div class="hero-visual">
+          <div class="hero-3d-wrapper">
+            <div class="hero-3d-card" id="hero3d">
+              <div class="hero-3d-bg"></div>
+              <div class="hero-3d-content">
+                <div class="chip">Available for Freelance</div>
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="hero-3d-inner">
+                  <div class="hero-avatar-circle">
+                    <!-- Replace src with your own 3D style image if you have one -->
+                    <img src="assets/profile-3d.png" alt="Subhransu portrait" />
+                  </div>
+                  <h2>Designing smart digital experiences</h2>
+                  <p>
+                    Focused on performant frontends, solid backend architecture, and AI‑powered interfaces like chatbots and assistants.
+                  </p>
+                  <div class="stack-pills">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>AI / Chatbots</span>
+                    <span>SQL / NoSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Blending full‑stack development with AI to create engaging, intelligent products.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Who I Am</h3>
+          <p>
+            I’m a developer who enjoys turning complex problems into simple, intuitive, and intelligent experiences.
+            I care about clean architecture, maintainable code, and products that feel smart and friendly to use.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>What I Do</h3>
+          <p>
+            I design and build full‑stack applications, AI‑powered tools, and custom chatbots—from responsive frontends and secure APIs
+            to conversational experiences that help users get things done faster.
+          </p>
+        </div>
+        <div class="about-card">
+          <h3>How I Work</h3>
+          <p>
+            I prefer clear communication, small iterative releases, and a strong focus on quality. I enjoy collaborating
+            with founders and teams to turn rough ideas into polished interfaces, prototypes, and production‑ready systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>Full‑stack development, AI integration, and conversational experiences.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-column">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5 / CSS3 / Modern JavaScript (ES6+)</li>
+            <li>React / SPA architecture</li>
+            <li>Responsive, accessible UI</li>
+            <li>Animations & micro‑interactions</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js / Express</li>
+            <li>RESTful API design</li>
+            <li>Authentication & security basics</li>
+            <li>Relational & NoSQL databases</li>
+          </ul>
+        </div>
+        <div class="skill-column">
+          <h3>AI & Other</h3>
+          <ul>
+            <li>AI‑powered features (chatbots, assistants, automation)</li>
+            <li>Prompt design & integration with AI APIs</li>
+            <li>Git & GitHub</li>
+            <li>Deployment (basic cloud / VPS)</li>
+            <li>Testing, debugging & performance tuning</li>
+            <li>Client communication & product thinking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="section-header">
+        <h2>Selected Projects</h2>
+        <p>A few examples of things I’ve worked on.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-tag">Web App</div>
+          <h3>Transport Solutions Application</h3>
+          <p>
+            A transport management solution that helps track trips, vehicles, drivers, and clients with clear end‑to‑end reports,
+            expense breakdowns, and a companion mobile experience.
+          </p>
+          <ul>
+            <li>End‑to‑end daily / monthly reporting for trips and revenue</li>
+            <li>Expense tracking for fuel, tolls, maintenance, and driver payouts</li>
+            <li>Mobile‑friendly views so owners can check key numbers on the go</li>
+            <li>Optional mobile app for drivers to update trip status and upload bills</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-tag">Portfolio</div>
+          <h3>Personal Developer Hub</h3>
+          <p>
+            This 3D‑inspired portfolio experience with subtle depth, motion, and a black theme tailored for modern displays.
+          </p>
+          <ul>
+            <li>Interactive 3D hero card with parallax</li>
+            <li>Section‑based layout for easy navigation</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-tag">AI / Chatbot</div>
+          <h3>AI‑Powered Client Assistants</h3>
+          <p>
+            Custom AI chatbots and assistants that answer questions, guide users, and automate repetitive workflows for businesses.
+          </p>
+          <ul>
+            <li>Conversational flows tailored to each business</li>
+            <li>Integrations with existing sites and tools</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Let’s talk about your next idea or project.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Say Hello</h3>
+          <p>
+            Ready to build something together or want to know more about my work?
+            Reach out and I’ll get back as soon as possible.
+          </p>
+          <div class="contact-items">
+            <div>
+              <span class="meta-label">Email</span>
+              <a class="meta-value" href="mailto:ssmohanty@gmail.com">ssmohanty@gmail.com</a>
+            </div>
+            <div>
+              <span class="meta-label">Phone</span>
+              <a class="meta-value" href="tel:+918249441990">(+91) 82494 41990</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleContactSubmit(event);">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me a bit about your project..." required></textarea>
+          </div>
+          <button class="btn primary full-width" type="submit">Send Message</button>
+          <!-- <p class="form-note">This demo form doesn’t send emails yet – you can update it later to connect to your backend or service.</p> -->
+        </form>
+      </div>
+    </section>
+
+    <!-- Customer Feedback -->
+    <section id="feedback" class="section section-alt">
+      <div class="section-header">
+        <h2>Customer Feedback</h2>
+        <p>Some kind words from people I’ve worked with recently.</p>
+      </div>
+      <div class="feedback-marquee">
+        <div class="feedback-track">
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">R</div>
+              <div class="feedback-person">
+                <div class="feedback-name">SK Goswami</div>
+                <div class="feedback-title">Transport Business Owner</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              Working with Subhransu was smooth and professional from start to finish. The product looks great and runs reliably.
+            </p>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">P</div>
+              <div class="feedback-person">
+                <div class="feedback-name">Avinab</div>
+                <div class="feedback-title">Startup Founder</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              He quickly understood our requirements and turned them into a clean, easy‑to‑use interface that our team loves.
+            </p>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">A</div>
+              <div class="feedback-person">
+                <div class="feedback-name">Sonia</div>
+                <div class="feedback-title">Product Owner</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              Great communication, clear code structure, and on‑time delivery. I’d be happy to collaborate again.
+            </p>
+          </article>
+
+          <!-- Duplicate set for seamless loop -->
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">R</div>
+              <div class="feedback-person">
+                <div class="feedback-name">SK Goswami</div>
+                <div class="feedback-title">Transport Business Owner</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              Working with Subhransu was smooth and professional from start to finish. The product looks great and runs reliably.
+            </p>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">P</div>
+              <div class="feedback-person">
+                <div class="feedback-name">Avinab</div>
+                <div class="feedback-title">Startup Founder</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              He quickly understood our requirements and turned them into a clean, easy‑to‑use interface that our team loves.
+            </p>
+          </article>
+          <article class="feedback-card">
+            <div class="feedback-top">
+              <div class="feedback-avatar" aria-hidden="true">A</div>
+              <div class="feedback-person">
+                <div class="feedback-name">Sonia</div>
+                <div class="feedback-title">Product Owner</div>
+              </div>
+              <div class="feedback-rating" aria-label="5 out of 5 stars" title="5 out of 5 stars">★★★★★</div>
+            </div>
+            <p class="feedback-message">
+              Great communication, clear code structure, and on‑time delivery. I’d be happy to collaborate again.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Subhransu Mohanty. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
